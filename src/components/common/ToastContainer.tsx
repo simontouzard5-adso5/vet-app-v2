@@ -3,7 +3,7 @@ import { CheckCircle2, Info, XCircle, X } from 'lucide-react';
 import { useToast } from '@/hooks/useToast';
 import type { ToastVariant } from '@/contexts/ToastContext';
 
-const ICONS: Record<ToastVariant, JSX.Element> = {
+const ICONS: Record<ToastVariant, React.ReactNode> = {
   success: <CheckCircle2 size={18} className="text-emerald" />,
   error: <XCircle size={18} className="text-red-500" />,
   info: <Info size={18} className="text-petrol-light" />,
