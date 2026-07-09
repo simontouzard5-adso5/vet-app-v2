@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { dogRunVariants, catWalkVariants, pawFadeVariants } from '@/animations/headerAnimations';
+import { dogRunVariants, pawFadeVariants } from '@/animations/headerAnimations';
 
 /**
- * Escena decorativa del header: un perro corriendo, un gato caminando en
- * sentido contrario y huellas que aparecen/desaparecen. Todo con SVG simple
- * (sin imágenes externas) para mantener el peso de la página bajo.
- * Se respeta `prefers-reduced-motion` deshabilitando las animaciones.
+ * Escena decorativa del header: un perrito recorriendo el header de
+ * izquierda a derecha, con huellas que aparecen/desaparecen detrás.
+ * Todo con emojis (sin imágenes externas) para mantener el peso de la
+ * página bajo. Se respeta `prefers-reduced-motion` deshabilitando la animación.
  */
 export const AnimatedHeaderScene = () => {
   const prefersReducedMotion =
@@ -30,14 +30,14 @@ export const AnimatedHeaderScene = () => {
         ))}
       </div>
 
-      {/* Perro corriendo */}
-      <motion.div variants={dogRunVariants} animate="animate" className="absolute bottom-1 text-2xl">
+      {/* Perrito recorriendo el header de izquierda a derecha */}
+      <motion.div
+        initial={{ left: '-8%' }}
+        variants={dogRunVariants}
+        animate="animate"
+        className="absolute bottom-1 text-2xl"
+      >
         🐕
-      </motion.div>
-
-      {/* Gato jugando en sentido contrario */}
-      <motion.div variants={catWalkVariants} animate="animate" className="absolute bottom-1 text-2xl">
-        🐈
       </motion.div>
     </div>
   );
