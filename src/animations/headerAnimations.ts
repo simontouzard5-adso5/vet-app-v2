@@ -1,22 +1,23 @@
 import type { Variants } from 'framer-motion';
 
-/** El perro corre de izquierda a derecha, en bucle, con leve rebote vertical. */
+/**
+ * El perro recorre el header de izquierda a derecha, en bucle, con leve
+ * rebote vertical (simulando el trote).
+ *
+ * IMPORTANTE: se anima `left` (posición) y NO `x` (transform). Los
+ * porcentajes de `x` se calculan respecto al tamaño del propio elemento
+ * (el emoji, que es diminuto), por eso antes parecía "pegado" en una
+ * esquina. `left` en cambio se calcula respecto al contenedor padre
+ * (el header), que es el recorrido que realmente queremos.
+ */
 export const dogRunVariants: Variants = {
   animate: {
-    x: ['-10%', '110%'],
+    left: ['-8%', '104%'],
     y: [0, -4, 0, -4, 0],
     transition: {
-      x: { duration: 9, repeat: Infinity, ease: 'linear' },
+      left: { duration: 9, repeat: Infinity, ease: 'linear' },
       y: { duration: 0.6, repeat: Infinity, ease: 'easeInOut' },
     },
-  },
-};
-
-/** El gato camina en sentido contrario, más lento, con pausas tipo "jugando". */
-export const catWalkVariants: Variants = {
-  animate: {
-    x: ['110%', '-10%'],
-    transition: { duration: 13, repeat: Infinity, ease: 'linear', delay: 2 },
   },
 };
 
