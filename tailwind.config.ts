@@ -77,9 +77,9 @@ export default {
       animation: {
         'paw-walk': 'paw-walk 8s linear infinite',
         'fade-up': 'fade-up .6s ease forwards',
-        'dog-bob': 'dog-bob .25s ease-in-out infinite',
-        'dog-leg-front': 'dog-leg-front .25s ease-in-out infinite',
-        'dog-leg-back': 'dog-leg-back .25s ease-in-out infinite',
+        'dog-bob': 'dog-bob .32s ease-in-out infinite',
+        'dog-leg-front': 'dog-leg-front .32s ease-in-out infinite',
+        'dog-leg-back': 'dog-leg-back .32s ease-in-out infinite',
         'dog-tail': 'dog-tail .45s ease-in-out infinite',
         'dog-ear': 'dog-ear .32s ease-in-out infinite',
         'dog-shadow': 'dog-shadow .32s ease-in-out infinite',
