@@ -48,10 +48,41 @@ export default {
           from: { opacity: '0', transform: 'translateY(16px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+        // ---- Ciclo de carrera del perrito del header (ver RunningDog.tsx) ----
+        'dog-bob': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-3px)' },
+        },
+        'dog-leg-front': {
+          '0%, 100%': { transform: 'translate(80px,52px) rotate(-26deg)' },
+          '50%': { transform: 'translate(80px,52px) rotate(26deg)' },
+        },
+        'dog-leg-back': {
+          '0%, 100%': { transform: 'translate(36px,54px) rotate(26deg)' },
+          '50%': { transform: 'translate(36px,54px) rotate(-26deg)' },
+        },
+        'dog-tail': {
+          '0%, 100%': { transform: 'translate(30px,34px) rotate(-10deg)' },
+          '50%': { transform: 'translate(30px,34px) rotate(22deg)' },
+        },
+        'dog-ear': {
+          '0%, 100%': { transform: 'translate(88px,18px) rotate(-6deg)' },
+          '50%': { transform: 'translate(88px,18px) rotate(12deg)' },
+        },
+        'dog-shadow': {
+          '0%, 100%': { transform: 'scaleX(1)', opacity: '0.28' },
+          '50%': { transform: 'scaleX(0.6)', opacity: '0.14' },
+        },
       },
       animation: {
         'paw-walk': 'paw-walk 8s linear infinite',
         'fade-up': 'fade-up .6s ease forwards',
+        'dog-bob': 'dog-bob .32s ease-in-out infinite',
+        'dog-leg-front': 'dog-leg-front .32s ease-in-out infinite',
+        'dog-leg-back': 'dog-leg-back .32s ease-in-out infinite',
+        'dog-tail': 'dog-tail .45s ease-in-out infinite',
+        'dog-ear': 'dog-ear .32s ease-in-out infinite',
+        'dog-shadow': 'dog-shadow .32s ease-in-out infinite',
       },
     },
   },
