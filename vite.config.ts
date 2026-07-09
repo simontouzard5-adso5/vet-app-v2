@@ -14,7 +14,7 @@ import { fileURLToPath, URL } from 'node:url';
  */
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: process.env.GITHUB_ACTIONS ? '/vet-app-v2/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
