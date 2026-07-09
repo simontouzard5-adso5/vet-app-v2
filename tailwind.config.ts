@@ -54,20 +54,20 @@ export default {
           '50%': { transform: 'translateY(-3px)' },
         },
         'dog-leg-front': {
-          '0%, 100%': { transform: 'translate(80px,52px) rotate(-26deg)' },
-          '50%': { transform: 'translate(80px,52px) rotate(26deg)' },
+          '0%, 100%': { transform: 'rotate(-26deg)' },
+          '50%': { transform: 'rotate(26deg)' },
         },
         'dog-leg-back': {
-          '0%, 100%': { transform: 'translate(36px,54px) rotate(26deg)' },
-          '50%': { transform: 'translate(36px,54px) rotate(-26deg)' },
+          '0%, 100%': { transform: 'rotate(26deg)' },
+          '50%': { transform: 'rotate(-26deg)' },
         },
         'dog-tail': {
-          '0%, 100%': { transform: 'translate(30px,34px) rotate(-10deg)' },
-          '50%': { transform: 'translate(30px,34px) rotate(22deg)' },
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(22deg)' },
         },
         'dog-ear': {
-          '0%, 100%': { transform: 'translate(88px,18px) rotate(-6deg)' },
-          '50%': { transform: 'translate(88px,18px) rotate(12deg)' },
+          '0%, 100%': { transform: 'rotate(-6deg)' },
+          '50%': { transform: 'rotate(12deg)' },
         },
         'dog-shadow': {
           '0%, 100%': { transform: 'scaleX(1)', opacity: '0.28' },
