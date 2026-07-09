@@ -1,173 +1,112 @@
 export const RunningDog = () => (
-  <svg
-    viewBox="0 0 140 90"
-    className="w-16 h-10 md:w-20 md:h-12"
-    aria-hidden="true"
-  >
-    {/* Sombra */}
-    <ellipse
-      cx="70"
-      cy="75"
-      rx="28"
-      ry="5"
-      fill="#000"
-      opacity="0.15"
-      className="animate-dog-shadow"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "center",
-      }}
-    />
+<svg
+viewBox="0 0 180 90"
+className="w-24 h-12 md:w-32 md:h-16"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
 
-    {/* Cola */}
-    <g
-      className="animate-dog-tail"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "100% 50%",
-      }}
-    >
-      <path
-        d="M42 34 Q28 28 22 14"
-        fill="none"
-        stroke="#B9743A"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-    </g>
+<ellipse
+cx="90"
+cy="80"
+rx="35"
+ry="6"
+fill="#000"
+opacity=".15"
+/>
 
-    {/* Cuerpo */}
-    <g
-      className="animate-dog-bob"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "center",
-      }}
-    >
-      <ellipse
-        cx="70"
-        cy="42"
-        rx="32"
-        ry="18"
-        fill="#E0995B"
-        stroke="#B9743A"
-        strokeWidth="2"
-      />
+<ellipse
+cx="78"
+cy="48"
+rx="34"
+ry="18"
+fill="#D59A54"
+/>
 
-      {/* Cabeza */}
-      <circle
-        cx="103"
-        cy="33"
-        r="14"
-        fill="#E0995B"
-        stroke="#B9743A"
-        strokeWidth="2"
-      />
+<circle
+cx="125"
+cy="36"
+r="16"
+fill="#D59A54"
+/>
 
-      {/* Hocico */}
-      <ellipse
-        cx="114"
-        cy="37"
-        rx="7"
-        ry="5"
-        fill="#F4C79C"
-      />
+<ellipse
+cx="137"
+cy="40"
+rx="8"
+ry="6"
+fill="#F7C88B"
+/>
 
-      {/* Ojo */}
-      <circle cx="101" cy="30" r="1.8" fill="#222" />
+<circle
+cx="121"
+cy="31"
+r="2"
+fill="#222"
+/>
 
-      {/* Nariz */}
-      <circle cx="119" cy="36" r="2" fill="#222" />
+<circle
+cx="141"
+cy="39"
+r="2"
+fill="#222"
+/>
 
-      {/* Oreja */}
-      <g
-        className="animate-dog-ear"
-        style={{
-          transformBox: "fill-box",
-          transformOrigin: "center",
-        }}
-      >
-        <path
-          d="M97 18 L105 7 L108 24 Z"
-          fill="#8B5A2B"
-        />
-      </g>
-    </g>
+<path
+d="M115 22 L108 8 L118 14"
+fill="#8B5A2B"
+/>
 
-    {/* Pata delantera */}
-    <g
-      className="animate-dog-leg-front"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "50% 0%",
-      }}
-    >
-      <line
-        x1="90"
-        y1="52"
-        x2="90"
-        y2="72"
-        stroke="#8B5A2B"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-    </g>
+<path
+d="M132 22 L139 8 L129 14"
+fill="#8B5A2B"
+/>
 
-    {/* Segunda pata delantera */}
-    <g
-      className="animate-dog-leg-back"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "50% 0%",
-      }}
-    >
-      <line
-        x1="80"
-        y1="52"
-        x2="80"
-        y2="72"
-        stroke="#8B5A2B"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-    </g>
+<path
+d="M46 42 Q22 30 16 12"
+stroke="#8B5A2B"
+strokeWidth="7"
+strokeLinecap="round"
+/>
 
-    {/* Pata trasera */}
-    <g
-      className="animate-dog-leg-back"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "50% 0%",
-      }}
-    >
-      <line
-        x1="55"
-        y1="52"
-        x2="55"
-        y2="72"
-        stroke="#8B5A2B"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-    </g>
+<line
+x1="65"
+y1="61"
+x2="58"
+y2="84"
+stroke="#8B5A2B"
+strokeWidth="6"
+strokeLinecap="round"
+/>
 
-    {/* Segunda pata trasera */}
-    <g
-      className="animate-dog-leg-front"
-      style={{
-        transformBox: "fill-box",
-        transformOrigin: "50% 0%",
-      }}
-    >
-      <line
-        x1="45"
-        y1="52"
-        x2="45"
-        y2="72"
-        stroke="#8B5A2B"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
-    </g>
-  </svg>
+<line
+x1="88"
+y1="61"
+x2="95"
+y2="84"
+stroke="#8B5A2B"
+strokeWidth="6"
+strokeLinecap="round"
+/>
+
+<line
+x1="108"
+y1="56"
+x2="116"
+y2="82"
+stroke="#8B5A2B"
+strokeWidth="6"
+strokeLinecap="round"
+/>
+
+<line
+x1="132"
+y1="56"
+x2="126"
+y2="82"
+stroke="#8B5A2B"
+strokeWidth="6"
+strokeLinecap="round"/>
+
+</svg>
 );
