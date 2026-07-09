@@ -10,7 +10,7 @@ export const siteConfig = {
   ivaRate: 0.19,
 
   notificationEmail: 'simoninnovagro@gmail.com',
-  whatsappCommercialNumber: '573204557785', // +57 320 455 7785, formato internacional sin signos
+  whatsappCommercialNumber: '573204557786', // +57 320 455 7785, formato internacional sin signos
 
   contact: {
     contactPersonName: 'Cristina Otero',
