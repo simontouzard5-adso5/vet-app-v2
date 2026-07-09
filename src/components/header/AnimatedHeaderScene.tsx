@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { dogRunVariants, pawFadeVariants } from '@/animations/headerAnimations';
+import { RunningDog } from './RunningDog';
 
 /**
- * Escena decorativa del header: un perrito recorriendo el header de
- * izquierda a derecha, con huellas que aparecen/desaparecen detrás.
- * Todo con emojis (sin imágenes externas) para mantener el peso de la
- * página bajo. Se respeta `prefers-reduced-motion` deshabilitando la animación.
+ * Escena decorativa del header: un perrito corriendo de izquierda a derecha
+ * con un ciclo de carrera realista (patas, cola, oreja y sombra animadas
+ * por separado, ver RunningDog.tsx), con huellas apareciendo/desapareciendo
+ * detrás. Todo en SVG/CSS puro, sin imágenes externas.
+ * Se respeta `prefers-reduced-motion` deshabilitando la animación.
  */
 export const AnimatedHeaderScene = () => {
   const prefersReducedMotion =
@@ -30,14 +32,9 @@ export const AnimatedHeaderScene = () => {
         ))}
       </div>
 
-      {/* Perrito recorriendo el header de izquierda a derecha */}
-      <motion.div
-        initial={{ left: '-8%' }}
-        variants={dogRunVariants}
-        animate="animate"
-        className="absolute bottom-1 text-2xl"
-      >
-        🐕
+      {/* Perrito corriendo de izquierda a derecha */}
+      <motion.div initial={{ left: '-8%' }} variants={dogRunVariants} animate="animate" className="absolute bottom-0">
+        <RunningDog />
       </motion.div>
     </div>
   );
